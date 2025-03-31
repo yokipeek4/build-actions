@@ -1,6 +1,6 @@
 CONFIG_TARGET_mediatek=y
 CONFIG_TARGET_mediatek_mt7981=y
-CONFIG_TARGET_mediatek_mt7981_DEVICE_mt7981-360-t7-108M=y
+CONFIG_TARGET_mediatek_mt7981_DEVICE_mt7981-clt-r30b1-112M=y
 CONFIG_DEVEL=y
 CONFIG_TOOLCHAINOPTS=y
 CONFIG_BUSYBOX_CUSTOM=y
@@ -28,8 +28,6 @@ CONFIG_KERNEL_WEXT_PRIV=y
 CONFIG_KERNEL_WEXT_PROC=y
 CONFIG_KERNEL_WEXT_SPY=y
 CONFIG_KERNEL_WIRELESS_EXT=y
-CONFIG_KSMBD_SMB_INSECURE_SERVER=y
-CONFIG_LIBSODIUM_MINIMAL=y
 CONFIG_MTK_ACK_CTS_TIMEOUT_SUPPORT=y
 CONFIG_MTK_AIR_MONITOR=y
 CONFIG_MTK_AMPDU_CONF_SUPPORT=y
@@ -123,16 +121,17 @@ CONFIG_MTK_WSC_V2_SUPPORT=y
 # CONFIG_OPENSSL_ENGINE_BUILTIN is not set
 # CONFIG_OPENSSL_PREFER_CHACHA_OVER_GCM is not set
 CONFIG_OPENSSL_WITH_NPN=y
+CONFIG_PACKAGE_6rd=y
+CONFIG_PACKAGE_6to4=y
 CONFIG_PACKAGE_attr=y
-CONFIG_PACKAGE_automount=m
 CONFIG_PACKAGE_autosamba=y
 CONFIG_PACKAGE_avahi-dbus-daemon=y
-CONFIG_PACKAGE_blkid=m
 CONFIG_PACKAGE_blockd=y
-CONFIG_PACKAGE_blockdev=m
 CONFIG_PACKAGE_ca-certificates=y
+CONFIG_PACKAGE_chinadns-ng=y
 CONFIG_PACKAGE_coreutils=y
 CONFIG_PACKAGE_coreutils-base64=y
+CONFIG_PACKAGE_coreutils-nohup=y
 CONFIG_PACKAGE_datconf=y
 CONFIG_PACKAGE_datconf-lua=y
 CONFIG_PACKAGE_dbus=y
@@ -140,16 +139,14 @@ CONFIG_PACKAGE_ddns-scripts=y
 CONFIG_PACKAGE_ddns-scripts-services=y
 CONFIG_PACKAGE_dns2socks=y
 CONFIG_PACKAGE_dns2tcp=y
-CONFIG_PACKAGE_dnsmasq_full_ipset=y
-CONFIG_PACKAGE_e2fsprogs=m
 CONFIG_PACKAGE_ethtool=y
-CONFIG_PACKAGE_f2fsck=m
-CONFIG_PACKAGE_fdisk=m
+CONFIG_PACKAGE_geoview=y
 CONFIG_PACKAGE_htop=y
 CONFIG_PACKAGE_ip-bridge=y
 CONFIG_PACKAGE_ip-full=y
 CONFIG_PACKAGE_ip6tables-extra=y
 CONFIG_PACKAGE_ipset=y
+CONFIG_PACKAGE_ipt2socks=y
 CONFIG_PACKAGE_iptables-mod-conntrack-extra=y
 CONFIG_PACKAGE_iptables-mod-extra=y
 CONFIG_PACKAGE_iptables-mod-filter=y
@@ -166,16 +163,12 @@ CONFIG_PACKAGE_iptables-mod-tproxy=y
 CONFIG_PACKAGE_iptables-mod-u32=y
 CONFIG_PACKAGE_iw=y
 CONFIG_PACKAGE_iwinfo=y
-CONFIG_PACKAGE_jq=y
 CONFIG_PACKAGE_kmod-ata-core=y
 CONFIG_PACKAGE_kmod-conninfra=y
 CONFIG_PACKAGE_kmod-crypto-acompress=y
-CONFIG_PACKAGE_kmod-crypto-cbc=m
 CONFIG_PACKAGE_kmod-crypto-ccm=y
 CONFIG_PACKAGE_kmod-crypto-cmac=y
-CONFIG_PACKAGE_kmod-crypto-crc32=m
 CONFIG_PACKAGE_kmod-crypto-ctr=y
-CONFIG_PACKAGE_kmod-crypto-cts=m
 CONFIG_PACKAGE_kmod-crypto-des=y
 CONFIG_PACKAGE_kmod-crypto-gcm=y
 CONFIG_PACKAGE_kmod-crypto-gf128=y
@@ -189,15 +182,6 @@ CONFIG_PACKAGE_kmod-ebtables=y
 CONFIG_PACKAGE_kmod-ebtables-ipv4=y
 CONFIG_PACKAGE_kmod-ebtables-ipv6=y
 CONFIG_PACKAGE_kmod-fs-autofs4=y
-CONFIG_PACKAGE_kmod-fs-exfat=m
-CONFIG_PACKAGE_kmod-fs-exportfs=m
-CONFIG_PACKAGE_kmod-fs-ext4=m
-CONFIG_PACKAGE_kmod-fs-f2fs=m
-CONFIG_PACKAGE_kmod-fs-ksmbd=m
-CONFIG_PACKAGE_kmod-fs-nfs-common=m
-CONFIG_PACKAGE_kmod-fs-nfs-common-rpcsec=m
-CONFIG_PACKAGE_kmod-fs-nfsd=m
-CONFIG_PACKAGE_kmod-fs-ntfs3=m
 CONFIG_PACKAGE_kmod-fs-vfat=y
 CONFIG_PACKAGE_kmod-ifb=y
 CONFIG_PACKAGE_kmod-inet-diag=y
@@ -223,16 +207,15 @@ CONFIG_PACKAGE_kmod-ipt-raw6=y
 CONFIG_PACKAGE_kmod-ipt-tee=y
 CONFIG_PACKAGE_kmod-ipt-tproxy=y
 CONFIG_PACKAGE_kmod-ipt-u32=y
-CONFIG_PACKAGE_kmod-lib-crc16=m
 CONFIG_PACKAGE_kmod-lib-lzo=y
 CONFIG_PACKAGE_kmod-mediatek_hnat=y
-CONFIG_PACKAGE_kmod-mii=m
-CONFIG_PACKAGE_kmod-mmc=m
 CONFIG_PACKAGE_kmod-mt_wifi=y
+CONFIG_PACKAGE_kmod-netlink-diag=y
 CONFIG_PACKAGE_kmod-nf-conncount=y
 CONFIG_PACKAGE_kmod-nf-dup-inet=y
 CONFIG_PACKAGE_kmod-nf-ipt6=y
-# CONFIG_PACKAGE_kmod-nft-tproxy is not set
+CONFIG_PACKAGE_kmod-nf-socket=y
+CONFIG_PACKAGE_kmod-nft-socket=y
 CONFIG_PACKAGE_kmod-nls-base=y
 CONFIG_PACKAGE_kmod-nls-cp437=y
 CONFIG_PACKAGE_kmod-nls-iso8859-1=y
@@ -241,20 +224,8 @@ CONFIG_PACKAGE_kmod-sched-core=y
 CONFIG_PACKAGE_kmod-scsi-core=y
 CONFIG_PACKAGE_kmod-tcp-bbr=y
 CONFIG_PACKAGE_kmod-tun=y
-CONFIG_PACKAGE_kmod-usb-core=m
-CONFIG_PACKAGE_kmod-usb-ehci=m
-CONFIG_PACKAGE_kmod-usb-net=m
-CONFIG_PACKAGE_kmod-usb-net-cdc-ether=m
-CONFIG_PACKAGE_kmod-usb-net-rndis=m
-CONFIG_PACKAGE_kmod-usb-printer=m
-CONFIG_PACKAGE_kmod-usb-storage=m
-CONFIG_PACKAGE_kmod-usb-storage-extras=m
-CONFIG_PACKAGE_kmod-usb-storage-uas=m
-CONFIG_PACKAGE_kmod-usb2=m
-CONFIG_PACKAGE_kmod-usb3=m
 CONFIG_PACKAGE_kmod-warp=y
 CONFIG_PACKAGE_kmod-zram=y
-CONFIG_PACKAGE_ksmbd-server=m
 CONFIG_PACKAGE_kvcedit=y
 CONFIG_PACKAGE_libatomic=y
 CONFIG_PACKAGE_libattr=y
@@ -262,18 +233,12 @@ CONFIG_PACKAGE_libavahi-client=y
 CONFIG_PACKAGE_libavahi-dbus-support=y
 CONFIG_PACKAGE_libblkid=y
 CONFIG_PACKAGE_libbpf=y
-CONFIG_PACKAGE_libcap=y
 CONFIG_PACKAGE_libcbor=y
-CONFIG_PACKAGE_libcomerr=m
 CONFIG_PACKAGE_libdaemon=y
 CONFIG_PACKAGE_libdbus=y
 CONFIG_PACKAGE_libelf=y
-CONFIG_PACKAGE_libev=y
 CONFIG_PACKAGE_libevdev=y
 CONFIG_PACKAGE_libexpat=y
-CONFIG_PACKAGE_libext2fs=m
-CONFIG_PACKAGE_libf2fs=m
-CONFIG_PACKAGE_libfdisk=m
 CONFIG_PACKAGE_libfido2=y
 CONFIG_PACKAGE_libgnutls=y
 CONFIG_PACKAGE_libipset=y
@@ -288,80 +253,62 @@ CONFIG_PACKAGE_libnl-route=y
 CONFIG_PACKAGE_libopenssl-afalg_sync=y
 CONFIG_PACKAGE_libopenssl-devcrypto=y
 CONFIG_PACKAGE_libpcap=y
-CONFIG_PACKAGE_libpcre=y
-CONFIG_PACKAGE_libpcre2=y
 CONFIG_PACKAGE_libpopt=y
 CONFIG_PACKAGE_libreadline=y
-CONFIG_PACKAGE_libsmartcols=m
-CONFIG_PACKAGE_libsodium=y
-CONFIG_PACKAGE_libss=m
 CONFIG_PACKAGE_libstdcpp=y
 CONFIG_PACKAGE_libtasn1=y
 CONFIG_PACKAGE_libtirpc=y
 CONFIG_PACKAGE_libuci-lua=y
 CONFIG_PACKAGE_libudev-zero=y
-CONFIG_PACKAGE_libudns=y
 CONFIG_PACKAGE_liburing=y
-CONFIG_PACKAGE_libusb-1.0=m
-CONFIG_PACKAGE_losetup=m
 CONFIG_PACKAGE_lua-cjson=y
-CONFIG_PACKAGE_lua-neturl=y
 CONFIG_PACKAGE_luci-app-ddns=y
 CONFIG_PACKAGE_luci-app-eqos-mtk=y
-CONFIG_PACKAGE_luci-app-ksmbd=m
 CONFIG_PACKAGE_luci-app-mtwifi-cfg=y
+CONFIG_PACKAGE_luci-app-passwall=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Geoview=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_SingBox=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray_Plugin=y
+CONFIG_PACKAGE_luci-app-passwall_Nftables_Transparent_Proxy=y
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
 CONFIG_PACKAGE_luci-app-samba4=y
-CONFIG_PACKAGE_luci-app-ssr-plus=y
 CONFIG_PACKAGE_luci-app-turboacc-mtk=y
-CONFIG_PACKAGE_luci-app-usb-printer=m
 CONFIG_PACKAGE_luci-app-vlmcsd=y
 CONFIG_PACKAGE_luci-i18n-ddns-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-eqos-mtk-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-ksmbd-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-mtwifi-cfg-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-samba4-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-ssr-plus-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-turboacc-mtk-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-usb-printer-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn=y
 CONFIG_PACKAGE_luci-theme-bootstrap=y
 CONFIG_PACKAGE_microsocks=y
 CONFIG_PACKAGE_mii_mgr=y
-CONFIG_PACKAGE_mkf2fs=m
-CONFIG_PACKAGE_mosdns=y
 CONFIG_PACKAGE_mtkhqos_util=y
 CONFIG_PACKAGE_mtwifi-cfg=y
 CONFIG_PACKAGE_nano=y
-CONFIG_PACKAGE_ntfs3-mount=m
 CONFIG_PACKAGE_openssh-keygen=y
 CONFIG_PACKAGE_openssh-sftp-server=y
 CONFIG_PACKAGE_openssl-util=y
-CONFIG_PACKAGE_p910nd=m
 CONFIG_PACKAGE_regs=y
 CONFIG_PACKAGE_resolveip=y
-CONFIG_PACKAGE_shadowsocks-rust-sslocal=y
-CONFIG_PACKAGE_shadowsocks-rust-ssserver=y
-CONFIG_PACKAGE_shadowsocksr-libev-ssr-check=y
-CONFIG_PACKAGE_shadowsocksr-libev-ssr-local=y
-CONFIG_PACKAGE_shadowsocksr-libev-ssr-redir=y
-CONFIG_PACKAGE_simple-obfs-client=y
+CONFIG_PACKAGE_sing-box=y
 CONFIG_PACKAGE_switch=y
 CONFIG_PACKAGE_tc-mod-iptables=y
 CONFIG_PACKAGE_tc-tiny=y
 CONFIG_PACKAGE_tcpdump=y
 CONFIG_PACKAGE_tcping=y
 CONFIG_PACKAGE_terminfo=y
-CONFIG_PACKAGE_usbutils=m
+CONFIG_PACKAGE_unzip=y
 CONFIG_PACKAGE_vlmcsd=y
-CONFIG_PACKAGE_wget-ssl=y
 CONFIG_PACKAGE_wifi-dats=y
 CONFIG_PACKAGE_wireless-regdb=y
 CONFIG_PACKAGE_wireless-tools=y
 CONFIG_PACKAGE_wsdd2=y
 CONFIG_PACKAGE_xray-core=y
-CONFIG_PACKAGE_zlib=y
+CONFIG_PACKAGE_xray-plugin=y
 CONFIG_PACKAGE_zram-swap=y
 # CONFIG_PKG_CHECK_FORMAT_SECURITY is not set
 # CONFIG_PKG_FORTIFY_SOURCE_1 is not set
@@ -370,6 +317,14 @@ CONFIG_SAMBA4_SERVER_AVAHI=y
 CONFIG_SAMBA4_SERVER_NETBIOS=y
 CONFIG_SAMBA4_SERVER_VFS=y
 CONFIG_SAMBA4_SERVER_WSDD2=y
+CONFIG_SING_BOX_BUILD_ACME=y
+CONFIG_SING_BOX_BUILD_CLASH_API=y
+CONFIG_SING_BOX_BUILD_ECH=y
+CONFIG_SING_BOX_BUILD_GVISOR=y
+CONFIG_SING_BOX_BUILD_QUIC=y
+CONFIG_SING_BOX_BUILD_REALITY_SERVER=y
+CONFIG_SING_BOX_BUILD_UTLS=y
+CONFIG_SING_BOX_BUILD_WIREGUARD=y
 CONFIG_WARP_CHIPSET="mt7981"
 CONFIG_WARP_DBG_SUPPORT=y
 CONFIG_WARP_VERSION=2
@@ -386,3 +341,30 @@ CONFIG_first_card_name="MT7981"
 # CONFIG_MTK_PRE_CAL_TRX_SET2_SUPPORT is not set
 # CONFIG_MTK_RLM_CAL_CACHE_SUPPORT is not set
 # CONFIG_MTK_SNIFFER_RADIOTAP_SUPPORT is not set
+# CONFIG_PACKAGE_boost is not set
+# CONFIG_PACKAGE_haproxy is not set
+# CONFIG_PACKAGE_libcares is not set
+# CONFIG_PACKAGE_libev is not set
+# CONFIG_PACKAGE_libltdl is not set
+# CONFIG_PACKAGE_liblua5.3 is not set
+# CONFIG_PACKAGE_libmbedtls is not set
+# CONFIG_PACKAGE_libpcre is not set
+# CONFIG_PACKAGE_libsodium is not set
+# CONFIG_PACKAGE_libudns is not set
+# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Haproxy is not set
+# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client is not set
+# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client is not set
+# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Server is not set
+# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust_Client is not set
+# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Simple_Obfs is not set
+# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus is not set
+# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin is not set
+# CONFIG_PACKAGE_shadowsocks-libev-config is not set
+# CONFIG_PACKAGE_shadowsocks-libev-ss-local is not set
+# CONFIG_PACKAGE_shadowsocks-libev-ss-redir is not set
+# CONFIG_PACKAGE_shadowsocks-libev-ss-server is not set
+# CONFIG_PACKAGE_shadowsocks-rust-sslocal is not set
+# CONFIG_PACKAGE_shadowsocksr-libev-ssr-local is not set
+# CONFIG_PACKAGE_shadowsocksr-libev-ssr-redir is not set
+# CONFIG_PACKAGE_trojan-plus is not set
+# CONFIG_PACKAGE_v2ray-plugin is not set
